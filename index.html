@@ -1,46 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>My Data Science Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <h1>Cherzs<span class="highlight">.</span></h1>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#footer" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Short introduction about yourself and your background in data science.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project.</p>
-            <p>Technologies used: Python, Pandas, etc.</p>
-            <a href="https://github.com/cherzs/project-repo">View on GitHub</a>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="profile-left">
+                    <div class="profile-summary">
+                        <h3>Muhammad Zhafran Ghaly</h3>
+                        <p>Data Science & Machine Learning Enthusiast</p>
+                        <p>Informatics Graduate from Universitas Amikom Yogyakarta</p>
+                        <p>Location: Sleman, Yogyakarta, Indonesia</p>
+                    </div>
+                    <div class="profile-skills">
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <h4>Experience</h4>
+                    <p>Worked on various data science projects, including predictive modeling and data visualization.</p>
+                    <p>Participated in hackathons and coding competitions, enhancing problem-solving skills.</p>
+                    <p>Interned at a tech company, focusing on machine learning applications.</p>
+                </div>
+            </div>
         </div>
-        <!-- Repeat for more projects -->
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:zhafrang638@gmail.com">zhafrang638@gmail.com</a></p>
+    <!-- Project Highlights Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Highlights</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="projects/project1.html" class="project-image-link">
+                        <img src="images/gda_icon.png" alt="GDA Icon" class="responsive-image">
+                    </a>
+                    <h3 class="project-title">GDA Icon</h3>
+                </div>
+                <div class="project-card">
+                    <a href="projects/project1.html" class="project-image-link">
+                        <img src="images/gda_icon.png" alt="Images PNG" class="responsive-image">
+                    </a>
+                    <h3 class="project-title">Inhasiqx</h3>
+                </div>
+                <div class="project-card">
+                    <a href="projects/project1.html" class="project-image-link">
+                        <img src="images/gda_icon.png" alt="Parallel Project" class="responsive-image">
+                    </a>
+                    <h3 class="project-title">Parallel Project</h3>
+                </div>
+                <div class="project-card">
+                    <a href="projects/project1.html" class="project-image-link">
+                        <img src="images/gda_icon.png" alt="GDA Icon" class="responsive-image">
+                    </a>
+                    <h3 class="project-title">GDA Icon</h3>
+                </div>
+                <div class="project-card">
+                    <a href="projects/project1.html" class="project-image-link">
+                        <img src="images/gda_icon.png" alt="Images PNG" class="responsive-image">
+                    </a>
+                    <h3 class="project-title">Inhasiqx</h3>
+                </div>
+                <div class="project-card">
+                    <a href="projects/project1.html" class="project-image-link">
+                        <img src="images/gda_icon.png" alt="Parallel Project" class="responsive-image">
+                    </a>
+                    <h3 class="project-title">Parallel Project</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Ghaly. All rights reserved.</p>
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ghaly</h3>
+                <p class="footer-description">Data Science & Machine Learning Enthusiast</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/zhafranghaly/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/cherzs/" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:zhafrang638@gmail.com?subject=Hello%20Ghaly&body=I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ghaly. All rights reserved.</p>
+        </div>
     </footer>
 </body>
+
 </html>
