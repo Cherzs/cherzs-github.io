@@ -1,0 +1,14 @@
+title: My Data Science Portfolio
+description: A collection of my data science projects
+baseurl: "" # Change if using a subfolder
+url: "https://cherzs.github.io" # Your GitHub pages URL
+author:
+  name: "Ghaly"
+  email: "zhafrang638@gmail.com"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+
+
+# Other settings can be customized as needed
