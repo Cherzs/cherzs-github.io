@@ -1,40 +1,34 @@
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5em;
+body {
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-.navbar-nav .nav-link {
-    color: #ffffff;
-    transition: color 0.3s;
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav .nav-link:hover {
-    color: #007bff;
+.section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.highlight {
-    color: #007bff;
-}
-
-.footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
+.section-title {
     text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
 }
 
-.footer p {
-    margin: 0;
-}
-
-.footer a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #0056b3;
+.text-justify {
+    text-align: justify;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8;
 }
 
 .card {
@@ -47,7 +41,26 @@
     transform: translateY(-5px);
 }
 
-.card-title {
-    font-size: 1.25em;
-    margin-top: 10px;
-} 
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875em;
+    color: #cccccc;
+}
